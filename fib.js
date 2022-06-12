@@ -1,3 +1,5 @@
+const eh = require('./executionHelper.js');
+
 // O(2^n) time
 // O(n) space
 const slowFib = (n) => {
@@ -9,9 +11,9 @@ const slowFib = (n) => {
 // O(n) space
 const fastFib = (n, cache = {}) => {
   if(n <= 2) return 1;
-  if(cache[n]) return cache[n];
+  if(cache.hasOwnProperty(n)) return cache[n];
   cache[n] = fastFib(n - 1, cache) + fastFib(n - 2, cache);
   return cache[n];
 };
 
-console.log(fastFib(50));
+eh.execute(fastFib, 50);
