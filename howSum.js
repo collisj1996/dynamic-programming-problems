@@ -7,8 +7,11 @@ const eh = require('./executionHelper');
 // 
 // If there are multiple combinations possible, you may return any single one
 
-// Time Complexity: O(n^m)
-// Space Complexty: O(n)
+// m = target sum
+// n = numbers.length
+//
+// time: O(n^m * m)
+// space: O(m)
 // Brute force
 const howSum = (targetSum, numbers) => {
   if(targetSum === 0) return [];
@@ -25,6 +28,8 @@ const howSum = (targetSum, numbers) => {
   return null;
 };
 
+// Time: O(n*m^2)
+// Space: O(m^2)
 const howSumQuick = (targetSum, numbers, memo = {}) => {
   if(memo.hasOwnProperty(targetSum)) return memo[targetSum];
   if(targetSum === 0) return [];
