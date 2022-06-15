@@ -1,4 +1,4 @@
-const eh = require('./executionHelper');
+const eh = require('./helpers/executionHelper');
 
 // m = targetSum (height)
 // n = numbers.length (branch factor)

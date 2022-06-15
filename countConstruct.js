@@ -1,4 +1,4 @@
-const eh = require('./executionHelper')
+const eh = require('./helpers/executionHelper')
 
 // write a function countConstuct(target, wordBank) that accepts a target string and
 // an array of strings
