@@ -1,4 +1,4 @@
-const eh = require('./helpers/executionHelper');
+const eh = require('../helpers/executionHelper');
 
 // Time Complexity: O(2^m+n)
 // Space Complexity: O(m+n)

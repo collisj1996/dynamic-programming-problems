@@ -1,4 +1,4 @@
-const eh = require('./helpers/executionHelper');
+const eh = require('../helpers/executionHelper');
 
 // O(2^n) time
 // O(n) space

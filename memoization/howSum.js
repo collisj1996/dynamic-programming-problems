@@ -1,4 +1,4 @@
-const eh = require('./helpers/executionHelper');
+const eh = require('../helpers/executionHelper');
 
 // Write howSum(targetSum, numbers)
 // 
